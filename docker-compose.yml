@@ -7,3 +7,4 @@ services :
      volumes:
       - ./:/data 
       - ./volume/store_data/db.sqlite3:/data/db.sqlite3
+     restart: unless-stopped
