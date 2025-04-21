@@ -4,7 +4,8 @@ WORKDIR /data
 
 RUN pip install django==3.2
 
-COPY . .
+COPY requirements.txt .
+RUN pip install -r requirements.txt  # Create this file with django==3.2
 
 RUN python manage.py migrate
 
