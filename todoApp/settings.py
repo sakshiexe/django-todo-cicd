@@ -131,4 +131,4 @@ STATICFILES_DIRS = (
 if DEBUG:
     import watchfiles
     WATCHFILES_FORCE_POLLING = True
-    TEMPLATES[0]['OPTIONS']['auto_reload'] = True  # 👈 Force template reload
+    TEMPLATES[0]['OPTIONS']['debug'] = True  # ✅ Valid
